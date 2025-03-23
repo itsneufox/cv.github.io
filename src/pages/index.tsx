@@ -117,7 +117,7 @@ const Home = () => {
             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
             <a
               style={linkStyle}
-              href="https://github.com/itsneufox/personal-website"
+              href="https://github.com/itsneufox/cv.github.io"
               rel="nofollow noreferrer"
               target="_blank"
             >
