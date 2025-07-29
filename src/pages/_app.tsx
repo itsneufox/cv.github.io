@@ -11,7 +11,16 @@ export default function App({ Component, pageProps }: AppProps) {
     <LanguageProvider>
       <ThemeProvider>
         <Head>
-          <title>CV&nbsp;|&nbsp;João Lopes Frias</title>
+          <title>CV | João Lopes Frias - Software Developer & Production Manager</title>
+          <meta name="description" content="Software developer and production manager specializing in TypeScript, React, PAWN development, and industrial operations. Open-source contributor with expertise in developer tools and warehouse management." />
+          <meta name="keywords" content="software developer, production manager, TypeScript, React, PAWN, open.mp, SA-MP, developer tools, warehouse operations, forklift operator, Portugal" />
+          <meta name="author" content="João Lopes Frias" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta property="og:title" content="João Lopes Frias - Software Developer & Production Manager" />
+          <meta property="og:description" content="Full-stack developer and industrial professional with expertise in TypeScript, React, and production line management." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://joaolopes.xyz" />
+          <link rel="canonical" href="https://joaolopes.xyz" />
         </Head>
         <Component {...pageProps} />
       </ThemeProvider>

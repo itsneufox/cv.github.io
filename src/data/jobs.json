@@ -1,12 +1,24 @@
 [
   {
     "employer": {
+      "name": "Mobiserra",
+      "location": "Portugal",
+      "url": "https://mobiserra.pt/"
+    },
+    "position": "Embalador",
+    "duration": "Abril 2025 - Presente",
+    "descriptions": [
+      "Responsável pela recolha dos produtos e embalagem dos mesmos, preparando-os para envio aos clientes. Realizo manutenção geral do armazém e operação de empilhadores como parte das minhas funções diárias."
+    ]
+  },
+  {
+    "employer": {
       "name": "Micronipol becomes Veolia",
       "location": "Portugal",
       "url": "https://micronipol.pt/"
     },
     "position": "Responsável de Linha de Produção",
-    "duration": "Outubro 2023 - Presente",
+    "duration": "Outubro 2023 - Março 2025",
     "descriptions": [
       "Responsável por alimentar, operar e monitorar a linha de produção, garantindo a qualidade do produto e a conformidade. Realizo manutenções básicas de equipamentos e resolução de problemas. Também opero empilhadores como parte das minhas funções diárias."
     ]

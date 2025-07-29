@@ -1,12 +1,24 @@
 [
   {
     "employer": {
+      "name": "Mobiserra",
+      "location": "Portugal",
+      "url": "https://mobiserra.pt/"
+    },
+    "position": "Packer",
+    "duration": "April 2025 - Present",
+    "descriptions": [
+      "Responsible for picking up products and boxing them, preparing them for shipment to clients. I perform general warehouse maintenance and forklift operation as part of my daily duties."
+    ]
+  },
+  {
+    "employer": {
       "name": "Micronipol becomes Veolia",
       "location": "Portugal",
       "url": "https://micronipol.pt/"
     },
     "position": "Production Line Manager",
-    "duration": "October 2023 - Present",
+    "duration": "October 2023 - March 2025",
     "descriptions": [
       "Responsible for feeding, operating, and monitoring the production line, ensuring product quality and compliance. I perform basic equipment maintenance and troubleshooting. I also operate forklifts as part of my daily duties."
     ]

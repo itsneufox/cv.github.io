@@ -4,6 +4,7 @@ import SkillsContainer from "../containers/SkillsContainer";
 import JobsContainer from "../containers/JobsContainer";
 import ProjectsContainer from "../containers/ProjectsContainer";
 import AboutMeContainer from "../containers/AboutMeContainer";
+import InterestsContainer from "../containers/InterestsContainer";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 import { Col, Row, Container } from "../components/ui";
@@ -88,6 +89,17 @@ const Home = () => {
       <Row style={bottomMargin}>
         <Col>
           <ProjectsContainer />
+        </Col>
+      </Row>
+
+      <Row style={rowMargin}>
+        <Col>
+          <h2>{getTranslation(language, 'interests')}</h2>
+        </Col>
+      </Row>
+      <Row style={bottomMargin}>
+        <Col>
+          <InterestsContainer />
         </Col>
       </Row>
 
