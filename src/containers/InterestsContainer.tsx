@@ -40,7 +40,7 @@ const interestItemStyle: React.CSSProperties = {
   paddingRight: "10px",
   paddingBottom: "3px",
   paddingLeft: "10px",
-  marginTop: "50x",
+  marginTop: "5px",
   marginRight: "5px",
   marginBottom: "0px",
   marginLeft: "0px",

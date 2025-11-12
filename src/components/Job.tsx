@@ -1,5 +1,4 @@
 import React from "react";
-import { v4 as UUIDv4 } from "uuid";
 
 interface IJobProps {
   employer: {
@@ -14,7 +13,7 @@ interface IJobProps {
 
 const Job = (props: IJobProps) => {
   const descriptionsList = props.descriptions.map((item) => (
-    <li key={UUIDv4()}>{item}</li>
+    <li key={`${props.employer.name}-${item}`}>{item}</li>
   ));
 
   return (

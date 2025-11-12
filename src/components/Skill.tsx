@@ -1,5 +1,4 @@
 import React from "react";
-import { v4 as UUIDv4 } from "uuid";
 
 interface ISkillProps {
   category: string;
@@ -8,7 +7,7 @@ interface ISkillProps {
 
 const Skill = (props: ISkillProps) => {
   const skillItems = props.items.map((name) => (
-    <span style={{ marginTop: "5px" }} key={UUIDv4()}>
+    <span style={{ marginTop: "5px" }} key={`${props.category}-${name}`}>
       <div style={skillItemStyle}>{name}</div>
       &nbsp;
     </span>
@@ -34,7 +33,7 @@ const skillItemStyle: React.CSSProperties = {
   paddingRight: "10px",
   paddingBottom: "3px",
   paddingLeft: "10px",
-  marginTop: "50x",
+  marginTop: "5px",
   marginRight: "5px",
   marginBottom: "0px",
   marginLeft: "0px",

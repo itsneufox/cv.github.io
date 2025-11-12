@@ -15,7 +15,7 @@
     "url": "https://github.com/itsneufox/PAWN-Painter-VSC"
   },
   {
-    "title": "PAWN ctl",
+    "title": "tapi",
     "description": "Ferramenta de linha de comando avançada para gestão de projetos open.mp/SA-MP. Simplifica a gestão de pacotes, compilação e estruturação de projetos PAWN. Desenvolvida em TypeScript para proporcionar uma experiência de desenvolvimento moderna e eficiente.",
     "url": "https://github.com/itsneufox/pawnctl"
   },
@@ -28,5 +28,10 @@
     "title": "open.mp - Tradução da Wiki",
     "description": "Contribuição ativa para a internacionalização da documentação do open.mp através da tradução do conteúdo da wiki para português. Este trabalho torna recursos essenciais de desenvolvimento acessíveis a programadores não-anglófonos, ajudando a expandir e diversificar a comunidade open.mp mundialmente.",
     "url": "https://github.com/itsneufox/web"
+  },
+  {
+    "title": "Condomínio+",
+    "description": "Aplicação de gestão condominial focada em automatizar finanças, manutenção e comunicação entre administração e moradores. Ainda em desenvolvimento ativo com enfoque em fluxos colaborativos e integrações modernas.",
+    "url": "https://github.com/itsneufox/Condominio-plus"
   }
 ]

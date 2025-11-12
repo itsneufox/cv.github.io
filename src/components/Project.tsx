@@ -12,7 +12,12 @@ const Project = (props: IProjectProps) => {
       <li style={listItemStyle}>
         <span>
           <span style={nameStyle}>
-            <a target="blank" rel="nofollow" href={props.url} style={linkStyle}>
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={props.url}
+              style={linkStyle}
+            >
               {props.title}
             </a>
           </span>

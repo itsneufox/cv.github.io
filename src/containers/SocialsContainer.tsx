@@ -20,7 +20,7 @@ const SocialsContainer = () => {
 
 const itemContainerStyle: React.CSSProperties = {
   marginRight: "1rem",
-  display: "inline-block !important",
+  display: "inline-block",
 };
 
 export default SocialsContainer;

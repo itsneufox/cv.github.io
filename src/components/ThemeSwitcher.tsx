@@ -19,7 +19,7 @@ const ThemeSwitcher = () => {
         cursor: isAnimating ? 'not-allowed' : 'pointer',
       }}
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-      aria-pressed={theme === 'dark'}
+      aria-checked={theme === 'dark'}
       role="switch"
       title={`Currently in ${theme} mode. Click to switch to ${theme === 'light' ? 'dark' : 'light'} mode.`}
     >

@@ -15,7 +15,7 @@
     "url": "https://github.com/itsneufox/PAWN-Painter-VSC"
   },
   {
-    "title": "PAWN ctl",
+    "title": "tapi",
     "description": "Advanced command-line tool for managing open.mp/SA-MP projects. Simplifies package management, compilation, and PAWN project structuring. Developed in TypeScript to provide a modern and efficient development experience.",
     "url": "https://github.com/itsneufox/pawnctl"
   },
@@ -28,5 +28,10 @@
     "title": "open.mp - Wiki Translation",
     "description": "Active contribution to the internationalisation of open.mp documentation by translating wiki content into Portuguese. This work makes essential development resources accessible to non-English-speaking programmers, helping to expand and diversify the global open.mp community.",
     "url": "https://github.com/itsneufox/web"
+  },
+  {
+    "title": "Condomínio+",
+    "description": "Condominium management application aimed at automating finances, maintenance, and communication between administrators and residents. Currently under active development with an emphasis on collaborative workflows and modern integrations.",
+    "url": "https://github.com/itsneufox/Condominio-plus"
   }
 ]

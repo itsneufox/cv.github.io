@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
+import React, { createContext, useState, useContext, ReactNode, useEffect, useRef } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -13,6 +13,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>('light');
   const [isAnimating, setIsAnimating] = useState(false);
+  const isAnimatingRef = useRef(false);
   
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme') as Theme;
@@ -28,7 +29,8 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   }, [theme]);
 
   const toggleTheme = (event?: React.MouseEvent) => {
-    if (isAnimating) return;
+    if (isAnimatingRef.current) return;
+    isAnimatingRef.current = true;
     setIsAnimating(true);
     
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -90,13 +92,23 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
       setTheme(newTheme);
     }, 400);
 
-    // Clean up the overlay
-    setTimeout(() => {
+    let cleanupTimeout: number | undefined;
+    let cleaned = false;
+    const cleanup = () => {
+      if (cleaned) return;
+      cleaned = true;
+      if (cleanupTimeout) {
+        window.clearTimeout(cleanupTimeout);
+      }
       if (overlay.parentNode) {
         overlay.parentNode.removeChild(overlay);
       }
+      isAnimatingRef.current = false;
       setIsAnimating(false);
-    }, 800);
+    };
+
+    overlay.addEventListener('transitionend', cleanup, { once: true });
+    cleanupTimeout = window.setTimeout(cleanup, 900);
   };
 
   return (

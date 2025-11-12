@@ -1,6 +1,8 @@
 {
   "name": "João Lopes Frias",
   "descriptions": [
-    "Software developer and industrial production manager with expertise in full-stack development and warehouse operations. I specialize in creating developer tools and contributing to open-source communities. I combine production line leadership with building technical solutions that serve thousands of users, always focusing on efficiency and user experience."
+    "Software developer and industrial production manager who bridges the factory floor with the digital ecosystem. I turn warehouse routines and production-line challenges into products and tools that solve real problems for both technical and operational teams.",
+    "My current focus is TypeScript, React, and automation—shipping everything from CLIs such as tapi to VS Code extensions and libraries for the open.mp/SA-MP community. I stay involved across the lifecycle: product ideation, DX, documentation, localization, and community support.",
+    "Comfortable with high-pressure logistics environments, I lead crews, streamline material flows, and enforce safety/quality standards—whether I’m operating forklifts or rolling out new software. That blend of physical operations and engineering gives me a pragmatic edge when building products."
   ]
 }

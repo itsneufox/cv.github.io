@@ -14,6 +14,11 @@ import { getTranslation } from "../locales/translations";
 const Home = () => {
   const { language } = useLanguage();
 
+  const handlePrint = () => {
+    if (typeof window === 'undefined') return;
+    window.print();
+  };
+
   return (
     <Container>
       <Row style={titleMargin}>
@@ -28,12 +33,13 @@ const Home = () => {
       </Row>
       <Row>
         <Col style={{ textAlign: 'left', display: 'flex', alignItems: 'center' }}>
-          <a
-            style={{ marginRight: '1rem' }}
-            href="javascript:window.print()"
+          <button
+            type="button"
+            onClick={handlePrint}
+            style={{ ...linkButtonStyle, marginRight: '1rem' }}
           >
             {getTranslation(language, 'print')}
-          </a>
+          </button>
           <a
             href={language === 'pt' ? "/files/joao-frias-cv-pt.pdf" : "/files/joao-frias-cv-en.pdf"}
           >
@@ -117,7 +123,7 @@ const Home = () => {
       <hr style={separatorStyle} />
       <Row style={footerMargin}>
         <Col style={{ textAlign: 'center' }}>
-          <span style={{ display: "inline-block !important", marginRight: '1rem !important' }}>
+          <span style={{ display: "inline-block", marginRight: '1rem' }}>
             <a
               style={linkStyle}
               href="https://joaolopes.xyz/"
@@ -153,6 +159,14 @@ const linkStyle: React.CSSProperties = {
   color: "var(--link-color)",
   margin: "0px",
   padding: "0px",
+};
+
+const linkButtonStyle: React.CSSProperties = {
+  ...linkStyle,
+  background: "none",
+  border: "none",
+  cursor: "pointer",
+  font: "inherit",
 };
 
 const topMargin: React.CSSProperties = {

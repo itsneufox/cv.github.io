@@ -75,8 +75,8 @@ const Custom404 = () => {
           <Col style={{ textAlign: "center" }}>
             <span
               style={{
-                display: "inline-block !important",
-                marginRight: "1rem !important",
+                display: "inline-block",
+                marginRight: "1rem",
               }}
             >
               <a

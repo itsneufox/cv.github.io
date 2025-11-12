@@ -1,5 +1,4 @@
 import React from "react";
-import { v4 as UUIDv4 } from "uuid";
 import { useLanguage } from "../context/LanguageContext";
 import introductionPT from "../data/aboutme.json";
 import introductionEN from "../data/aboutme.en.json";
@@ -10,7 +9,7 @@ const IntroductionContainer = () => {
   const introduction = language === 'pt' ? introductionPT : introductionEN;
 
   const descriptionList = introduction.descriptions.map((item) => (
-    <li key={UUIDv4()}>{item}</li>
+    <li key={`${language}-${item}`}>{item}</li>
   ));
 
   return <ul style={descriptionStyle}>{descriptionList}</ul>;
